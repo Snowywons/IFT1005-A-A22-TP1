@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Produits</title>
+</head>
+<body>
+<!-- TODO -->
+<header style="border: 1px solid black;">
+  <a href="index.html">
+    <img src="./assets/img/logo.svg" alt="Image introuvable">
+  </a>
+  <nav style="border: 1px solid black;">
+    <a href="index.html">Accueil</a>
+    <a href="products.html">Produits</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping-cart.html">Panier</a>
+  </nav>
+</header>
+<main style="display: grid; grid-template-columns: 200px 1fr">
+  <section style="border: 1px solid black; height: 600px; display: inline-block; padding: 10px;">
+    <h4>Catégories</h4>
+    <ul style="list-style-type:none; padding: 0; text-align: center;">
+      <li><button style="width: 100%">Appareils photo</button></li>
+      <li><button style="width: 100%">Consoles</button></li>
+      <li><button style="width: 100%">Écrans</button></li>
+      <li><button style="width: 100%">Ordinateurs</button></li>
+      <li><button style="width: 100%">Tous les produits</button></li>
+    </ul>
+
+    <h4>Classement</h4>
+    <ul style="list-style-type:none; padding: 0; text-align: center;">
+      <li><button style="width: 100%">Prix (bas-haut)</button></li>
+      <li><button style="width: 100%">Prix (haut-bas)</button></li>
+      <li><button style="width: 100%">Nom (A-Z)</button></li>
+      <li><button style="width: 100%">Nom (Z-A)</button></li>
+    </ul>
+  </section>
+
+  <section style="display: inline-block; border: 1px solid black; padding: 10px;">
+    <h3>Produits</h3>
+    <p>6 produits</p>
+
+    <div id=productslist style="display: grid; grid-template-columns: 200px 200px 200px; gap: 10px;">
+
+      <a href="product.html" style="text-decoration: none;">
+        <div style="width: auto; height: 225px; border: 1px solid black; padding: 5px;">
+          <h4>Apple TV</h4>
+          <div style="border: 1px solid black;">
+            <img src="./assets/img/apple-tv.png" alt="Image introuvable" style="height: 100px;">
+          </div>
+          <p>Prix : 249.99</p>
+        </div>
+      </a>
+
+      <a href="product.html" style="text-decoration: none;">
+        <div style="width: auto; height: 225px; border: 1px solid black; padding: 5px;">
+          <h4>Produit 1</h4>
+          <div style="border: 1px solid black;">
+            <img src="./assets/img/camera-1.png" alt="Image introuvable" style="height: 100px;">
+          </div>
+          <p>Prix :</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</main>
+<footer style="border: 1px solid black;">
+  <div>
+    <h3>Informations de l'équipe</h3>
+    <p>
+      Denis, Jimi-Luc 9999999
+    </p>
+  </div>
+</footer>
+</body>
+</html>
