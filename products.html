@@ -1,3 +1,7 @@
+<!--
+Auteurs : Jimi-Luc Denis, Mingze Li
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,73 +10,108 @@
 </head>
 <body>
 <!-- TODO -->
-<header style="border: 1px solid black;">
-  <a href="index.html">
-    <img src="./assets/img/logo.svg" alt="Image introuvable">
-  </a>
-  <nav style="border: 1px solid black;">
-    <a href="index.html">Accueil</a>
-    <a href="products.html">Produits</a>
-    <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>
-  </nav>
-</header>
-<main style="display: grid; grid-template-columns: 200px 1fr">
-  <section style="border: 1px solid black; height: 600px; display: inline-block; padding: 10px;">
-    <h4>Catégories</h4>
-    <ul style="list-style-type:none; padding: 0; text-align: center;">
-      <li><button style="width: 100%">Appareils photo</button></li>
-      <li><button style="width: 100%">Consoles</button></li>
-      <li><button style="width: 100%">Écrans</button></li>
-      <li><button style="width: 100%">Ordinateurs</button></li>
-      <li><button style="width: 100%">Tous les produits</button></li>
+  <header>
+    <a href="index.html">
+      <img src="./assets/img/logo.svg" alt="Image introuvable">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="products.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shopping-cart.html">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <table>
+      <tr>
+        <td>
+          <h4>Catégories</h4>
+          <ul id=productcategories>
+            <li><button>Appareils photo</button></li>
+            <li><button>Consoles</button></li>
+            <li><button>Écrans</button></li>
+            <li><button>Ordinateurs</button></li>
+            <li><button>Tous les produits</button></li>
+          </ul>
+
+          <h4>Classement</h4>
+          <ul id=productcriteria>
+            <li><button>Prix (bas-haut)</button></li>
+            <li><button>Prix (haut-bas)</button></li>
+            <li><button>Nom (A-Z)</button></li>
+            <li><button>Nom (Z-A)</button></li>
+          </ul>
+        </td>
+        <td>
+          <h4>Produit</h4>
+          <p>6 produits</p>
+          <ul id=productslist>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Apple TV</h4>
+                  <img src="./assets/img/apple-tv.png" alt="Image introuvable">
+                  <p>Prix : 249.99$</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Canon EOS 5D Mark II</h4>
+                  <img src="./assets/img/camera-1.png" alt="Image introuvable">
+                  <p>Prix : 2999.99$</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Nikon D7000</h4>
+                  <img src="./assets/img/camera-2.png" alt="Image introuvable">
+                  <p>Prix : 549.99$</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Canon PowerShot SD1300</h4>
+                  <img src="./assets/img/camera-3.png" alt="Image introuvable">
+                  <p>Prix : 299.99$</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Portable</h4>
+                  <img src="./assets/img/laptop-1.png" alt="Image introuvable">
+                  <p>Prix : 699.99$</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="product.html">
+                <div>
+                  <h4>Portable professionnel</h4>
+                  <img src="./assets/img/laptop-2.png" alt="Image introuvable">
+                  <p>Prix : 599.99$</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <ul>
+      <li>Denis Jimi-Luc (20235959)</li>
+      <li>Mingze Li (20150696)</li>
     </ul>
-
-    <h4>Classement</h4>
-    <ul style="list-style-type:none; padding: 0; text-align: center;">
-      <li><button style="width: 100%">Prix (bas-haut)</button></li>
-      <li><button style="width: 100%">Prix (haut-bas)</button></li>
-      <li><button style="width: 100%">Nom (A-Z)</button></li>
-      <li><button style="width: 100%">Nom (Z-A)</button></li>
-    </ul>
-  </section>
-
-  <section style="display: inline-block; border: 1px solid black; padding: 10px;">
-    <h3>Produits</h3>
-    <p>6 produits</p>
-
-    <div id=productslist style="display: grid; grid-template-columns: 200px 200px 200px; gap: 10px;">
-
-      <a href="product.html" style="text-decoration: none;">
-        <div style="width: auto; height: 225px; border: 1px solid black; padding: 5px;">
-          <h4>Apple TV</h4>
-          <div style="border: 1px solid black;">
-            <img src="./assets/img/apple-tv.png" alt="Image introuvable" style="height: 100px;">
-          </div>
-          <p>Prix : 249.99</p>
-        </div>
-      </a>
-
-      <a href="product.html" style="text-decoration: none;">
-        <div style="width: auto; height: 225px; border: 1px solid black; padding: 5px;">
-          <h4>Produit 1</h4>
-          <div style="border: 1px solid black;">
-            <img src="./assets/img/camera-1.png" alt="Image introuvable" style="height: 100px;">
-          </div>
-          <p>Prix :2999.99</p>
-        </div>
-      </a>
-
-    </div>
-  </section>
-</main>
-<footer style="border: 1px solid black;">
-  <div>
-    <h3>Informations de l'équipe</h3>
-    <p>
-      Denis, Jimi-Luc 9999999
-    </p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
