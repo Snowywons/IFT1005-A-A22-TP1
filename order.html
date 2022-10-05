@@ -9,7 +9,6 @@ Auteurs : Jimi-Luc Denis, Mingze Li
   <title>OnlineShop - Commande</title>
 </head>
 <body>
-<!-- TODO -->
   <header>
     <a href="index.html">
       <img src="./assets/img/logo.svg" alt="Image introuvable">
@@ -23,12 +22,33 @@ Auteurs : Jimi-Luc Denis, Mingze Li
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <form action="confirmation.html" method="get">
+      <fieldset>
+        <fieldset>
+          <legend>Contact</legend>
+          Prénom: <input type="text" id="firstname" name="firstname" size="20" maxlength="50" required><br>
+          Nom: <input type="text" id="lastname" name="lastname" size="20" maxlength="50" required><br>
+          Adresse courriel: <input type="email" id="email" name="email" size="20" maxlength="50" required><br>
+          Numéro de téléphone: <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
+        </fieldset>
+        <fieldset>
+          <legend>Paiement</legend>
+          Numéro de carte de crédit: <input type="tel" id="creditcard" name="creditcard" placeholder="0000-1111-2222-3333" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+          Date d’expiration de la carte<input type="month" id="creditcardexpiry" name="creditcardexpiry" required><br>
+        </fieldset>
+        <input type="submit" value="Payer" >
+      </fieldset>
+    </form>
+  </main>
   <footer>
-    <ul>
-      <li>Denis Jimi-Luc (20235959)</li>
-      <li>Mingze Li (20150696)</li>
-    </ul>
+    <div>
+      <h3>Informations de l'équipe</h3>
+      <ul>
+        <li>Denis Jimi-Luc (20235959)</li>
+        <li>Mingze Li (20150696)</li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
